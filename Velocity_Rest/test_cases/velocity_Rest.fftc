@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<testCase version="26.2.0.202603311918">
+    <general>
+        <language>Python</language>
+        <xPathVersion>XPATH31</xPathVersion>
+    </general>
+    <procedures>
+        <item name="main">
+            <steps>
+                <item guid="776ba634-2919-49f6-b902-70c07383c1dd" action="open" session="s1" useFieldsInCommand="false">
+                    <command>
+                        <body>project://Velocity_Rest/session_profiles/velocity_Rest.ffsp</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.OpenStepPropertyGroup">
+                        <stepProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                        <sessionProperties type="com.fnfr.svt.adapter.automation.tools.common.documents.TransferableDocumentObject" transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.restful.RESTfulSessionProperties" version="2" version.inherit="false"/>
+                        <sessionClass type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                        <sessionVersion type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                    </applicationProperties>
+                </item>
+                <item guid="ae8a06ed-ab03-4dc8-bc4c-0c704f916be5" action="GET" session="s1">
+                    <command>
+                        <body>/velocity/api/util/v3/time</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.adapter.automation.tools.common.documents.TransferableDocumentObject" transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.restful.RESTfulInvokeProperties" action="/velocity/api/util/v3/time" action.inherit="false"/>
+                </item>
+                <item guid="3004daf8-7b13-40d1-8a66-48d840585772" action="GET" session="s1">
+                    <command>
+                        <body>/velocity/api/inventory/v20/templates</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.adapter.automation.tools.common.documents.TransferableDocumentObject" transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.restful.RESTfulInvokeProperties" action="/velocity/api/inventory/v20/templates" action.inherit="false"/>
+                </item>
+                <item guid="6277f098-032e-47bb-8995-e9d45805f587" action="GET" session="s1">
+                    <command>
+                        <body>/velocity/api/inventory/v20/templates/tree</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.adapter.automation.tools.common.documents.TransferableDocumentObject" transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.restful.RESTfulInvokeProperties" action="/velocity/api/inventory/v20/templates/tree" action.inherit="false"/>
+                </item>
+                <item guid="06b67fb7-7541-440b-bef4-75c31b0a186e" action="close" session="s1">
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+            </steps>
+        </item>
+    </procedures>
+</testCase>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<SessionTemplate version="26.2.0.202603311918">
+    <baseApplication>com.fnfr.itest.applications.webservices.restful</baseApplication>
+    <sessionProperties type="com.fnfr.svt.adapter.automation.tools.common.documents.TransferableDocumentObject" transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.restful.RESTfulSessionProperties" url="https://vel-ddrg.spt.scs.is.keysight.com/" url.inherit="false" acceptAllCookies="true" acceptAllCookies.inherit="false" version="2" version.inherit="false">
+        <authentication transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.AuthenticationProperties" authenticationType="Basic" authenticationType.inherit="false" user="administrator" user.inherit="false" password.masked="false" password="[profile(&apos;.&apos;, &apos;velo_password&apos;)]" password.inherit="false" acceptAllCertificates="true" acceptAllCertificates.inherit="false"/>
+    </sessionProperties>
+    <parameters version="26.2.0.202603311918">
+        <parameters escape="true">
+            <parameters xmlns:pt="http://www.fnfr.com/schemas/parameterTree">
+                <velo_password pt:datatype="SECRET" pt:mask="true"/>
+            </parameters>
+        </parameters>
+    </parameters>
+    <responseLibrary inherit="false">project://Velocity_Rest/</responseLibrary>
+    <formMapLibrary inherit="false">project://Velocity_Rest/</formMapLibrary>
+    <nickName>velRest</nickName>
+    <language>Python</language>
+</SessionTemplate>
