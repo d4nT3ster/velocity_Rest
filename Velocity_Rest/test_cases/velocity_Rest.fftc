@@ -36,6 +36,18 @@
                     </command>
                     <applicationProperties type="com.fnfr.svt.adapter.automation.tools.common.documents.TransferableDocumentObject" transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.restful.RESTfulInvokeProperties" action="/velocity/api/inventory/v20/templates/tree" action.inherit="false"/>
                 </item>
+                <item guid="66cd0202-4db1-4916-9c02-99ada076fdac" action="GET" session="s1" useFieldsInCommand="false">
+                    <command>
+                        <body>/velocity/api/inventory/v20/folders</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.adapter.automation.tools.common.documents.TransferableDocumentObject" transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.restful.RESTfulInvokeProperties" action="/velocity/api/inventory/v20/folders" action.inherit="false"/>
+                </item>
+                <item guid="99b8e698-792d-4509-acd0-0ba75862bc52" action="GET" session="s1" useFieldsInCommand="false">
+                    <command>
+                        <body>/velocity/api/inventory/v20/devices</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.adapter.automation.tools.common.documents.TransferableDocumentObject" transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.restful.RESTfulInvokeProperties" action="/velocity/api/inventory/v20/devices" action.inherit="false"/>
+                </item>
                 <item guid="06b67fb7-7541-440b-bef4-75c31b0a186e" action="close" session="s1">
                     <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
                 </item>
