@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<testCase version="26.2.0.202603311918">
+<testCase version="26.3.0.202608180715">
     <general>
         <language>Python</language>
         <xPathVersion>XPATH31</xPathVersion>
@@ -53,6 +53,12 @@
                         <body>/velocity/api/inventory/v20/devices/ports</body>
                     </command>
                     <applicationProperties type="com.fnfr.svt.adapter.automation.tools.common.documents.TransferableDocumentObject" transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.restful.RESTfulInvokeProperties" action="/velocity/api/inventory/v20/devices/ports" action.inherit="false"/>
+                </item>
+                <item guid="072405b0-c351-4102-91c2-92b8b834c4ac" action="GET" session="s1">
+                    <command>
+                        <body>/velocity/api/inventory/v20/devices/port_groups</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.adapter.automation.tools.common.documents.TransferableDocumentObject" transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.restful.RESTfulInvokeProperties" action="/velocity/api/inventory/v20/devices/port_groups" action.inherit="false"/>
                 </item>
                 <item guid="06b67fb7-7541-440b-bef4-75c31b0a186e" action="close" session="s1">
                     <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
