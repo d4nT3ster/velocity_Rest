@@ -72,6 +72,12 @@
                     </command>
                     <applicationProperties type="com.fnfr.svt.adapter.automation.tools.common.documents.TransferableDocumentObject" transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.restful.RESTfulInvokeProperties" action="/velocity/api/inventory/v20/cables" action.inherit="false"/>
                 </item>
+                <item guid="f44e924f-ad16-4715-969e-e67725920d7d" action="GET" session="s1">
+                    <command>
+                        <body>/velocity/api/inventory/v20/cables_csv</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.adapter.automation.tools.common.documents.TransferableDocumentObject" transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.restful.RESTfulInvokeProperties" action="/velocity/api/inventory/v20/cables_csv" action.inherit="false"/>
+                </item>
                 <item guid="06b67fb7-7541-440b-bef4-75c31b0a186e" action="close" session="s1">
                     <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
                 </item>
